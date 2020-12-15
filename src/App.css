@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg,#9fccfa 0%, #0974f1 100%);
+  color: #F8F9FA;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height:  100vh;
+}
+
+header{
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+header,
+.form-container{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags-container{
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**Form Input and button*/
+.form-container input,
+.form-container button
+{
+  padding: 0.4rem;
+  font-size: 1.8rem;
+  border: none;
+  background: white;
+}
+
+.tags-container button {
+  padding: 0.2rem;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  border: #495057;
+  border-radius: 6px;
+}
+
+.tags-container button:hover {
+  background: #9fccfa;
+}
+
+.tags-container button:active {
+  color: #9fccfa;
+}
+
+.form-container button
+{
+  color: #343A40;
+  background: #F8F9FA;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  border: #495057;
+}
+
+.form-container button:hover {
+  background: #9fccfa;
+}
+
+
+/**Todo container*/
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**List of Todos*/
+.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+
+/**Independent todo*/
+.todo-box {
+  background: #F8F9FA;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: #212529;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s ease;
+  
+}
+
+.Category-box{
+  margin: 0.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #F8F9FA;
+  display: flex;
+  border: none;
+  border-radius: 2px;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+/**Filtered todo*/
+.filter-todo {
+  padding: 1rem;
+}
+
+.todo li{
+  flex: 1;
+}
+
+/**Complete and trash buttons*/
+.trash-btn,
+.complete-btn{
+  background:#9fccfa;
+  color: #F8F9FA;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.trash-btn:hover,
+.complete-btn:hover{
+  background: #0974f1;;
+  transition: all 0.3s ease-in;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check,
+.fa-plus-square {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+
+/**Selector*/
+
+select {
+  color: #212529;
+  cursor: pointer;
+  width: 10rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select:hover{
+  background: #0974f1;;
+  transition: all 0.3s ease-in;
+}
